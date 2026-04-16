@@ -277,14 +277,6 @@
 <div class="toast" id="toast"></div>
 
 <script>
-<<<<<<< HEAD
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./service-worker.js')
-      .then(reg => console.log('Service Worker registered', reg))
-      .catch(err => console.log('Service Worker failed', err));
-  });
-=======
 // ===== DATA =====
 const DEFAULT_TEMPLATES = [
   {
@@ -325,7 +317,6 @@ function save() {
   localStorage.setItem('wt_templates', JSON.stringify(state.templates));
   localStorage.setItem('wt_history', JSON.stringify(state.history));
   localStorage.setItem('wt_session', JSON.stringify(state.session));
->>>>>>> 15afb009344ccfbd3970a0d3c5b28018c6d7603d
 }
 
 // ===== HELPERS =====
